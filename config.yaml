@@ -47,4 +47,4 @@ network:
   tokenized_ssids: true
 project:
   path: /usr/share/spyguard
-  tags_url: https://api.github.com/repos/SpyGuard/spyguard/tags
+  tags_url: https://api.github.com/repos/WanderingCoder-Omen/SpyGuard/tags

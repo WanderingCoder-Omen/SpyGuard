@@ -43,18 +43,7 @@ network:
   internet_check: https://1.1.1.1
   out: lo
   ssids:
-  - Free
-  - Public
-  - Wifi
-  - Coffee
-  - Netgear
-  - Default
-  - D-link
-  - Guest
-  - WLAN
-  - ZyXEL
-  - Asus
-  - Wireless
+  - Tarkash
   tokenized_ssids: true
 project:
   path: /usr/share/spyguard

@@ -2,9 +2,9 @@
     <div class="backend-content" id="content">
         <div class="column col-8 col-xs-12">
             <br />
-            <p><strong>A new SpyGuard version is available ({{next_version}}).</strong><br />
+            <p><strong>A new Tarkash version is available ({{next_version}}).</strong><br />
                 <span v-if="!update_launched">Please click on the button below to update your instance.</span>
-                <span v-if="update_launched&&!update_finished">Updating SpyGuard, please wait. You'll be redirected once updated.</span>     
+                <span v-if="update_launched&&!update_finished">Updating Tarkash, please wait. You'll be redirected once updated.</span>     
                 <span v-if="update_launched&&update_finished" class="color-green">✓ Update finished!</span>
             </p>
             <button class="btn btn-primary" :class="[ update_launched ? 'loading' : '' ]" v-on:click="launch_update()" v-if="!update_finished">Update Spyguard</button>

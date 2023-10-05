@@ -18,13 +18,13 @@
             return {
                 internet: false,
                 message: "",
-                title: "SPYGUARD",
+                title: "TARKASH",
                 letters: ["SSS§ṠSSSSS","PPPþ⒫PPPP","YYYÿYYYÿYȲYY","GGḠGGGǤG¬G","UÚUUÜUɄUUU", "AAAAÄA¬AAA", "RЯRɌRRRɌʭR", "DD¬DDDDƋDD"]
             }
         },
         methods: {
             delete_captures: function() {
-                this.message = "Doing some cleaning..."
+                this.message = "Initializing..."
                 console.log("[splash-screen.vue] Deleting previous captures...");
                 axios.get('/api/misc/delete-captures', { timeout: 30000 });
                 
@@ -45,13 +45,13 @@
         },
         created: function() {
             window.access_point = ""
-            console.log("[splash-screen.vue] Welcome to SPYGUARD");
+            console.log("[splash-screen.vue] Welcome to TARKASH");
             setInterval(function(){
                     let res = ""
                     this.letters.forEach(l => { res += l.charAt(this.generate_random(0, 9)) })
                     this.title = res;
                 setTimeout(function(){
-                    this.title = "SPYGUARD";
+                    this.title = "TARKASH";
                 }.bind(this), this.generate_random(30, 100));
             }.bind(this), this.generate_random(500, 4000));
             this.delete_captures();
